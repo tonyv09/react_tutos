@@ -10,7 +10,7 @@ import Footer from './Global/Footer';
 import items from '../data/menu';  
 
 class App extends Component{
-  static PropTypes = {
+  static propTypes = {
     children:PropTypes.object.isRequired
   } ; 
   render(){

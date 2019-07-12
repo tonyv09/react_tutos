@@ -1,6 +1,7 @@
 //Dependencias
 import React, {Component} from 'react';
 import propTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 //assets
 import logo from './images/logo.svg';
@@ -20,7 +21,10 @@ import './css/Header.css';
             <img src={logo} alt="logo" />
             <h1>{title}</h1>
             <ul className="Menu">
-              {items && items.map((item,key) => <li key={key}> {item.title } </li>)}
+              {items && items.map(
+                (item,key) => <li key={key}><Link to={item.url}> {item.title }</Link> </li>
+                )
+                }
             </ul>
           </div>
         </div>

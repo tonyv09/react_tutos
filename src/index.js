@@ -1,6 +1,6 @@
 //Dependencis
 import React from 'react';
-import {react} from 'react-dom';
+import {render} from 'react-dom';
 import {BrowserRouter as Router} from 'react-router-dom';
 
 //Routes
